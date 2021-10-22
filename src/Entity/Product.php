@@ -30,7 +30,7 @@ class Product
     /**
      * @ORM\Column(type="integer")
      */
-    private $quiantity;
+    private $quantity;
 
     /**
      * @ORM\Column(type="datetime")
@@ -88,14 +88,14 @@ class Product
         return $this;
     }
 
-    public function getQuiantity(): ?int
+    public function getQuantity(): ?int
     {
-        return $this->quiantity;
+        return $this->quantity;
     }
 
-    public function setQuiantity(int $quiantity): self
+    public function setQuantity(int $quantity): self
     {
-        $this->quiantity = $quiantity;
+        $this->quantity = $quantity;
 
         return $this;
     }
