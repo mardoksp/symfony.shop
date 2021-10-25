@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends AbstractController
 {
     /**
-     * @Route("/", methods="GET", name="homepage")
+     * @Route("/", methods="GET", name="main_homepage")
      */
     public function index(Request $request): Response
     {
