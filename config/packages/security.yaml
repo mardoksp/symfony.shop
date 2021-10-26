@@ -19,7 +19,7 @@ security:
             anonymous: true
             lazy: true
             provider: app_user_provider
-            quard:
+            guard:
                 authenticators:
                     - App\Security\Admin\LoginFormAuthenticator
             remember_me:
