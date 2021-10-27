@@ -1,0 +1,12 @@
+
+054 -Auto-Increment-
+https://www.clever-cloud.com/blog/engineering/2015/05/20/why-auto-increment-is-a-terrible-idea/
+
+054 Symfony-The-UID-Component
+https://symfony.com/doc/5.3/components/uid.html
+
+058 Symfony-flash-
+https://symfony.com/doc/5.3/components/http_foundation/sessions.html#flash-messages
+
+059 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/801a125eed13f03080a40a904440b278c49e2302

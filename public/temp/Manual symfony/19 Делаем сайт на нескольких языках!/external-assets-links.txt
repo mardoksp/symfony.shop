@@ -1,0 +1,18 @@
+
+160 Symfony-
+https://symfony.com/doc/5.3/translation.html
+
+160 Symfony-LocaleSubscriber
+https://symfony.com/doc/5.3/session/locale_sticky_session.html
+
+161 Symfony-
+https://symfony.com/doc/5.3/translation/locale.html
+
+163 Github-php-translation-symfony-bundle
+https://github.com/php-translation/symfony-bundle
+
+163 PHPTranslations-best-practices
+https://php-translation.readthedocs.io/en/latest/best-practice/index.html
+
+164 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/ca4d2f0fa2a345388548c82239dc8aafbfa4eef9

@@ -1,0 +1,72 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>009 Для чего нужны Entity и Repository_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><strong>Entity</strong> - упрощенная модель реального объекта. </p><p>Когда мы формируем структуру сущность, то наделяем ее свойствами присущими реальному объекту.</p><p><br></p><p><strong>Сущность можно сформировать командой: </strong></p><p>symfony console make:entity</p><p>далее нам необходимо указать поля сущности и указать их свойства (тип, длина, наличие стандартного значения).</p><p><br></p><p>Все сущности в среде symfony размещаются в папке <em>Entity</em> и <em>ORM (Object-Relational Mapping)</em> работает с ними через использование аннотаций. ORM - посредник между приложением и базой данных, она нужна для предоставления возможности работать с сущностями как с объектами, используя объектно-ориентированный подход. </p><p>Указывая соответствующие аннотации у класса, мы можем менять поведение таблицы в базе данных. Для работы с полем используются методы (геттеры и сеттеры) их же использует symfony для проставления значений</p><p><br></p><p><strong>Пример класса User:</strong></p><pre class="prettyprint linenums">/**
+ * @ORM\Entity(repositoryClass=UserRepository::class) - репозиторий сущности
+ * @ORM\Table(name="app_user") - теперь таблица будет называться “app_user”
+ */
+class User implements UserInterface
+{
+
+    /**
+     * @ORM\Id - поле является айдишником в базе данных
+     * @ORM\GeneratedValue - с каждой новой записью, данное поле будет формироваться базой данных
+     * @ORM\Column(type="integer") - тип поля “integer”
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="string", length=180, unique=true) - тип поля “string”, длина 180, уникальное значение в таблицы
+     */
+    private $email;
+ 
+    ...
+
+    public function getEmail(): ?string
+    {
+        return $this-&gt;email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this-&gt;email = $email;
+
+        return $this;
+    }
+
+    ...    
+
+}</pre><p><br></p><p>Для написания запросов, связанных с созданной сущностью используется класс с префиксом Repository, данный класс указывается в аннотации сущности, классы репозиториев содержаться в папке “src/Repository”.</p><p><br></p><p>Пример <strong>ProductRepository</strong>:</p><pre class="prettyprint linenums">class ProductRepository extends ServiceEntityRepository
+{
+    public function __construct(ManagerRegistry $registry)
+    {
+    parent::__construct($registry, Product::class);
+    }
+
+    /**
+    * получение количества продуктов по категории
+    */
+    public function getCountByCategory(Category $category)
+    {
+        return $this-&gt;createQueryBuilder('p')
+        -&gt;select('count(p.id)')
+        -&gt;andWhere('p.category = :category')
+        -&gt;setParameter('category', $category)
+        -&gt;getQuery()
+        -&gt;getSingleScalarResult();
+    }
+}</pre><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

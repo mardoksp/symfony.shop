@@ -1,0 +1,24 @@
+
+039 Symfony-
+https://symfony.com/doc/5.3/controller/upload_file.html
+
+044 Imagine-
+https://imagine.readthedocs.io/en/stable/
+
+049 Twig-format-currency
+https://twig.symfony.com/doc/2.x/filters/format_currency.html
+
+050 Github-Sluggable.md
+https://github.com/doctrine-extensions/DoctrineExtensions/blob/v2.4.x/doc/sluggable.md
+
+050 Symfony-StofDoctrineExtensionsBundle
+https://symfony.com/doc/current/bundles/StofDoctrineExtensionsBundle/index.html
+
+051 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/00f878c5958f4105720c83e01361ae45cad49c03
+
+051 Symfony-
+https://symfony.com/doc/5.3/doctrine/associations.html
+
+051 Symfony-StofDoctrineExtensionsBundle
+https://symfony.com/doc/current/bundles/StofDoctrineExtensionsBundle/index.html

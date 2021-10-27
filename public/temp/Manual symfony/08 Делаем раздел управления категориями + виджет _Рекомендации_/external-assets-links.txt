@@ -1,0 +1,9 @@
+
+066 Lipsum-generator-Lorem-Ipsum
+https://www.lipsum.com/
+
+069 Symfony-
+https://symfony.com/doc/5.3/templates.html#embedding-controllers
+
+071 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/1a832b0eab5fc4f6727998dfbcd4c966ba7c3f04

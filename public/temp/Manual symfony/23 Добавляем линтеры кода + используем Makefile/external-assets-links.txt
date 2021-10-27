@@ -1,0 +1,18 @@
+
+191 Github-FriendsOfPHP-PHP-CS-Fixer
+https://github.com/FriendsOfPHP/PHP-CS-Fixer
+
+192 Github-phpstan-phpstan
+https://github.com/phpstan/phpstan
+
+193 ESLint-
+https://eslint.org/docs/user-guide/getting-started
+
+194 -Makefile
+https://makefiletutorial.com/#getting-started
+
+194 -Makefile-
+https://blog.theodo.com/2018/05/why-you-need-a-makefile-on-your-project/
+
+195 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/e6c6b81693f9ac78fc4a7fff06c191f4b29b0fd6

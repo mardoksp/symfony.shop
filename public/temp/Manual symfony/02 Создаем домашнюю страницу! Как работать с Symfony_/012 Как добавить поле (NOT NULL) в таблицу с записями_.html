@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>012 Как добавить поле (NOT NULL) в таблицу с записями_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><strong>Задача:</strong></p><p>Добавить в сущность User поле "is_deleted", которое стандартно должно быть у всех "0"</p><p><br></p><p><strong>Рекомендованный способ:</strong></p><ol><li><p>Создаем новое свойство в сущности, по дефолту ставим, что быть null не может. </p><p><em>symfony console make:entity User</em></p><p><br></p></li><li><p>Создадим миграцию:</p><p><em>symfony console make:migration</em></p><p><br></p></li><li><p>Откроем миграцию и добавляем в метод up() запросы:</p><p><em>ALTER TABLE users ADD is_deleted BOOLEAN NULL; (</em>добавит новое поле с дефолтным значение "NULL")</p><p><em>UPDATE users SET is_deleted='0' WHERE is_deleted IS NULL; (</em>is_deleted='0' во всех записях, где есть это поле в значение NULL)</p><p>ALTER TABLE <em>users</em> ALTER <em>is_deleted</em> SET NOT NULL; (проставит везде дефолтное значение NOT NULL)</p><p><br></p></li></ol><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

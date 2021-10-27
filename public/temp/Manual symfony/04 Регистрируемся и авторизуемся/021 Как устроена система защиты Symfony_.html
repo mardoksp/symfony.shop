@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>021 Как устроена система защиты Symfony_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><em>Система защиты в среде symfony предоставляется бандлом symfony/security-bundle.</em></p><p><br></p><p><strong>Настройка аутентификации пользователя:</strong></p><ol><li><p>Создание класса пользователя.</p><p>symfony console make:user (укажем название класса, хранить ли в базе данных, уникальное поле отображения, используется ли хеширование пароля)</p></li><li><p>Выполнить миграции, которые создадут таблицу с пользователями.</p><p>symfony console make:migration</p><p>symfony console doctrine:migrations:migrate</p></li><li><p>Добавить в security.yaml раздел с провайдером пользователей “app_user_provider”. Основная задача которого является обновление данных пользователя из сессии.</p></li><li><p>Добавить в security.yaml раздел с хешированием паролей “password_hashers”, в котором можно указать путь к классу сущности User и алгоритм шифрования.</p></li><li><p>Добавить в security.yaml в раздел “firewalls” новый фаервол.</p></li><li><p>Создать аутентификатор для фаервола и указать его у фаервола. Аутентификатор позволяет контролировать весь процесс обработки введенных данных пользователя при попытке авторизоваться.</p></li><li><p>Создать входной маршрут, на который пользователь может отправлять данные, для попытки авторизоваться.</p></li><li><p>Проставить проверки на роли пользователя, для доступа к защищенным разделам.</p></li></ol><p><br></p><p><strong>Фаервол в симфони</strong> - система аутентификации, в которой указывается область действия, способ авторизации пользователей. На каждый запрос, может распространяться только один фаервол.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

@@ -1,0 +1,6 @@
+
+132 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/9304d2c537dfcdf683ba060962b024fc7a4922bb
+
+132 Vuex-
+https://vuex.vuejs.org/guide/structure.html

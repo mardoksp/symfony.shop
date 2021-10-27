@@ -1,0 +1,6 @@
+
+086 Symfony-
+https://symfony.com/doc/5.3/security.html#c-hashing-passwords
+
+090 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/3e9ff7aa6f7335adbb40d01c29b641fccd941f7b

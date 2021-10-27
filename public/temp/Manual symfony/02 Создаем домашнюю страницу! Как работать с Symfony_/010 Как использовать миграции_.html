@@ -1,0 +1,49 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>010 Как использовать миграции_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Использование миграций является хорошей практикой изменения структуры базы данных.</p><p><br></p><p><strong>Создание миграции:</strong></p><p>symfony console make:migration</p><p><br></p><p>Был сформирован файл миграции, который содержит все запросы, которые нужно выполнить в базе данных, чтобы отображение приложения соответствовало структуре базы данных. Название для каждой миграции формируется уникальное, пример “<em>migrations/Version20210531205645.php</em>”</p><p><br></p><p><strong>Пример миграции:</strong></p><pre class="prettyprint linenums">/*
+* Название миграции. Оно будет записано в таблице “doctrine_migration_versions”. 
+* Предназначение таблицы: вести учет примененных миграций в базе данных
+**/
+final class Version20210610094917 extends AbstractMigration
+{
+    /*
+    * Описание миграции
+    **/
+    public function getDescription() : string
+    {
+        return '';
+    }
+
+    /*
+    * При применении миграции, будут выполнены запросы из этого метода
+    **/
+    public function up(Schema $schema) : void
+    {
+        $this-&gt;addSql('ALTER TABLE product ALTER uuid SET NOT NULL');
+    }
+
+    /*
+    * При отмене миграции, будут выполнены запросы из этого метода
+    **/
+    public function down(Schema $schema) : void
+    {
+        $this-&gt;addSql('CREATE SCHEMA public');
+        $this-&gt;addSql('ALTER TABLE product ALTER uuid DROP NOT NULL');
+    }
+}
+</pre><p><br></p><p>После этого вы можете выполнить миграцию:</p><p><strong>symfony console doctrine:migrations:migrate</strong></p><p><br></p><p>Узнать статус примененных миграций вы можете командой:</p><p><strong>symfony console doctrine:migrations:status</strong></p><p><br></p><p>Сформировать список с пустой миграцией:</p><p><strong>symfony console doctrine:migrations:generate</strong></p><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

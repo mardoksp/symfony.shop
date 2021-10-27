@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>013 Полезные команды по работе с базой данных</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><em>ВНИМАНИЕ: </em></p><p><em>Если вы не знаете, как работает команда, добавьте в конце команды “ --help”, например “symfony console doctrine:schema:validate --help”, чтобы посмотреть по ней документацию, не выполняя ее.</em></p><p><br></p><p><strong>Создание базы данных (если она не была создана):</strong></p><p>symfony console doctrine:database:create</p><p><br></p><p><strong>Удаление базы данных:</strong></p><p>symfony console doctrine:database:drop</p><p><br></p><p><strong>Загрузка фикстур:</strong></p><p>symfony console doctrine:fixtures:load</p><p><br></p><p><strong>Выполнение sql-запроса:</strong></p><p>symfony console doctrine:query:sql “...”</p><p><br></p><p>ВНИМАНИЕ: </p><p><em>Если вы добавите в конце “ --dump-sql”, то команда только выведет вам список SQL-команд, которые она собирается выполнить при использовании команды без указанного флага. Пример: “symfony console doctrine:schema:create --dump-sql” только выведет список команд.</em></p><p><br></p><p><strong>Выполнение запросов по созданию и связке таблиц:</strong></p><p>symfony console doctrine:schema:create</p><p><br></p><p><strong>Удаление таблиц:</strong></p><p>symfony console doctrine:schema:drop</p><p><br></p><p><strong>Обновление таблиц:</strong></p><p>symfony console doctrine:schema:update (если добавить в конце “ --force”, то команда выполнит все sql-запрос по обновлению таблиц)</p><p><br></p><p><strong>Проверка валидности структур entity:</strong></p><p>symfony console doctrine:schema:validate</p><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

@@ -1,0 +1,18 @@
+
+020 Symfony-
+https://symfony.com/doc/5.3/doctrine/registration_form.html
+
+022 Mailtrap
+http://mailtrap.io/
+
+024 Symfony-
+https://symfony.com/doc/5.3/security/form_login_setup.html
+
+025 Symfony-
+https://symfony.com/doc/5.3/security/remember_me.html
+
+029 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/1263442ff76a373b7e48929ee3b440c3eb0122b5
+
+029 Symfony-
+https://symfony.com/doc/5.3/validation.html#constraints

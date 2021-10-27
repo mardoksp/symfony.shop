@@ -1,0 +1,21 @@
+
+015 Symfony-
+https://symfony.com/doc/5.3/forms.html
+
+018 Symfony-
+https://symfony.com/doc/5.3/reference/forms/types.html
+
+019 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/4e9b292bcfb08fe87813c5ff7d626f76a9e09246
+
+019 Q-
+https://stackoverflow.com/questions/15116146/delete-records-from-a-database-or-simply-hide-them-during-reads
+
+019 Symfony-
+https://symfony.com/doc/5.3/reference/forms/types.html
+
+019 Symfony- 
+https://symfony.com/doc/current/form/form_customization.html
+
+019 Symfony-
+https://symfony.com/doc/current/validation.html

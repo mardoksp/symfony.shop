@@ -1,0 +1,12 @@
+
+143 Symfony-Event-EventListener
+https://symfony.com/doc/5.3/event_dispatcher.html
+
+147 Inky-
+https://get.foundation/emails/docs/inky.html
+
+147 Github-foundation-inky
+https://github.com/foundation/inky
+
+150 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/34385550075314982b74be23eeedf1efc805cbf5

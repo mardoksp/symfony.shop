@@ -1,0 +1,27 @@
+
+196 CircleCI-
+https://circleci.com/blog/all/
+
+197 CircleCI-Symfony
+https://circleci.com/blog/continuous-integration-symfony-behat/
+
+198 -VPS-Google-Cloud
+https://dev.to/phocks/how-to-get-a-free-google-server-forever-1fpf
+
+198 -SQL-
+https://groups.google.com/g/google-cloud-sql-discuss/c/lX7JlbqUyG8?pli=1
+
+200 Symfony-
+https://symfony.com/doc/5.3/performance.html
+
+202 Deployer-
+https://deployer.org/docs/configuration.html
+
+202 Github-deployphp-deployer
+https://github.com/deployphp/deployer
+
+203 Symfony-
+https://symfony.com/doc/5.3/controller/error_pages.html
+
+204 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/34a9624f1865dc3ef4e1a1b8783e70106d14e0c6

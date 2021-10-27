@@ -1,0 +1,24 @@
+
+002 Symfony-MakerBundle
+https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html
+
+002 Symfony-Profiler
+https://symfony.com/doc/5.3/profiler.html
+
+003 Symfony-
+https://symfony.com/doc/5.3/best_practices.html#use-the-default-directory-structure
+
+004 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/5db9852a50a3020ea1d936659bb833360438c481
+
+004 PHPStorm-Php-Inspections
+https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended
+
+004 Symfony-
+https://symfony.com/doc/5.3/reference/index.html
+
+004 Symfony - 
+https://symfony.com/components
+
+004 PHPStorm-Symfony-Support
+https://plugins.jetbrains.com/plugin/7219-symfony-support/

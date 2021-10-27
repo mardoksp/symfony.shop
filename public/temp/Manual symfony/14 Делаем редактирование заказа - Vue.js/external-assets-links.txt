@@ -1,0 +1,15 @@
+
+104 Vue.js-
+https://vuejs.org/v2/guide/index.html
+
+105 Chrome-Vue.js-Devtools
+https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+
+105 Vuex-
+https://vuex.vuejs.org/guide/structure.html
+
+121 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/93f51e83f3538cb0ce18a822285f0d679925f647
+
+121 Vue.js-
+https://vuejs.org/v2/guide/index.html

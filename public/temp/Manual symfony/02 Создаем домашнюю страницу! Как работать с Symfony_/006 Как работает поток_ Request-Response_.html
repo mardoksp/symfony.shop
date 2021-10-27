@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>006 Как работает поток_ Request-Response_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><h4>Схема работы потока «Request-Response»:</h4><figure><img src="https://img-c.udemycdn.com/redactor/raw/article_lecture/2021-07-10_10-37-56-48d5fe7e5d960d56935b03453b4154d9.jpg"></figure><p>Как происходит обработка запроса:</p><ol><li><p>Клиент отправляет HTTP-запрос (через браузер или консоль);</p></li><li><p>Запрос передается сервером на обработку файлом: <strong>public/index.php</strong> (файл расположен в корне проекта);</p></li><li><p>Файл-обработчик запускает <strong>ядро Symfony</strong> и передает ей параметры HTTP-запроса (содержимое, путь, метод запроса);</p></li><li><p>Symfony использует ищет подходящий маршрут (<strong>Route</strong>) и определяет контроллер, которому нужно передать запрос на выполнение;</p></li><li><p>Контроллер обрабатывает <strong>Request </strong>и формирует <strong>Response</strong>. Подставляет заголовки и содержимое ответа. Контроллер может инициализировать передачу обработки запроса другому контроллеру;</p></li><li><p>Пользователю возвращается ответ. Ответом может быть перенаправление на другой ресурс.</p></li></ol><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

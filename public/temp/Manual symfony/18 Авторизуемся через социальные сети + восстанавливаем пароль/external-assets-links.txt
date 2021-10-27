@@ -1,0 +1,21 @@
+
+151 Symfony-
+https://symfony.com/doc/5.3/security/reset_password.html
+
+151 Github-SymfonyCasts-reset-password-bundle
+https://github.com/SymfonyCasts/reset-password-bundle
+
+153 Github-knpuniversity-oauth2-client-bundle
+https://github.com/knpuniversity/oauth2-client-bundle
+
+154 Symfony-API
+https://symfony.com/doc/5.3/security/guard_authentication.html
+
+158 Symfony-
+https://symfony.com/doc/5.3/console.html
+
+159 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/3487589ca6245366f739edfb1a60f4d29908d4c1
+
+159 Symfony-API
+https://symfony.com/doc/5.3/security/guard_authentication.html

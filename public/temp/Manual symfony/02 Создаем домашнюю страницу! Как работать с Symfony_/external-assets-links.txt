@@ -1,0 +1,30 @@
+
+005 Symfony-
+https://symfony.com/doc/5.3/controller.html
+
+006 -HTTP-Symfony
+https://symfony.com/doc/current/introduction/http_fundamentals.html
+
+007 Symfony-
+https://symfony.com/doc/5.3/templates.html
+
+008 -PostgreSQL-Ubuntu-18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04-ru
+
+009 Symfony-Entity
+https://symfony.com/doc/5.3/doctrine.html#creating-an-entity-class
+
+010 Symfony-DoctrineMigrationsBundle
+https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+011 Doctrine-
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/reference/basic-mapping.html#basic-mapping
+
+014 Github-
+https://github.com/devandimplab/symfony-vuejs-shop-course/tree/9551ae64bdb91701819052996b7c866821aa929c
+
+014 PostgreSQL-
+https://www.postgresql.org/docs/8.1/sql-keywords-appendix.html
+
+014 Doctrine-
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/reference/basic-mapping.html#basic-mapping
