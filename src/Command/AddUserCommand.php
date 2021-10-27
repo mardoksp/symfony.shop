@@ -71,16 +71,15 @@ class AddUserCommand extends Command
         }
 
         $isAdmin = boolval($isAdmin);
-/*
+
         try {
+            $user = $this->createUser($email, $password, $isAdmin);
 
         } catch (RuntimeException $exception) {
             $io->comment($exception->getMessage());
 
             return Command::FAILURE;
         }
-*/
-        $user = $this->createUser($email, $password, $isAdmin);
 
         $successMessage = sprintf('%s was successfuly created: %s',
             $isAdmin ? 'Administrator user' : 'User',
