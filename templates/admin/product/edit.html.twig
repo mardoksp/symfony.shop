@@ -142,12 +142,12 @@
             </div>
 
             <hr/>
-{#            {% include 'admin/_embed/_card/_form_buttons.html.twig' with {#}
-{#                'entity': product,#}
-{#                'catalogUrl': path('admin_product_list')#}
-{#            } %}#}
-{#            {{ form_rest(form) }}#}
-{#            {{ form_end(form) }}#}
+            {% include 'admin/_embed/_card/_form_buttons.html.twig' with {
+                'entity': product,
+                'catalogUrl': path('admin_product_list')
+            } %}
+            {{ form_rest(form) }}
+            {{ form_end(form) }}
         </div>
     </div>
 
