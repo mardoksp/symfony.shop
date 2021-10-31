@@ -16,11 +16,16 @@ class ProductManager
      * @var string
      */
     private string $productImagesDir;
+    /**
+     * @var ProductImageManager
+     */
+    private ProductImageManager $productImageManager;
 
-    public function __construct(EntityManagerInterface $entityManager, string $productImagesDir)
+    public function __construct(EntityManagerInterface $entityManager, ProductImageManager $productImageManager, string $productImagesDir)
     {
         $this->entityManager = $entityManager;
         $this->productImagesDir = $productImagesDir;
+        $this->productImageManager = $productImageManager;
     }
 
     public function getRepository(): ObjectRepository
@@ -37,9 +42,10 @@ class ProductManager
         $this->entityManager->flush();
     }
 
-    public function remove()
+    public function remove(Product $product)
     {
-        //
+        $product->setIsDeleted(true);
+        $this->save($product);
     }
 
     /**
@@ -59,6 +65,13 @@ class ProductManager
 
         $productDir = $this->getProductImagesDir($product);
 
-        dd($productDir);
+        $productImage = $this->productImageManager->saveImageForProduct($productDir, $tempImageFilename);
+
+        if ($productImage) {
+            $productImage->setProduct($product);
+            $product->addProductImage($productImage);
+        }
+
+        return $product;
     }
 }

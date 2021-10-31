@@ -31,9 +31,9 @@
                     Slug
                 </div>
                 <div class="col-md-11">
-{#                    {% if product %}#}
-{#                        {{ product.slug }}#}
-{#                    {% endif %}#}
+                    {% if product %}
+                        {{ product.slug }}
+                    {% endif %}
                 </div>
             </div>
 
@@ -97,27 +97,27 @@
                 </div>
             </div>
 
-{#            {% if images|length %}#}
-{#                <div class="row">#}
-{#                    <div class="col-md-12">#}
-{#                        <span class="text-gray-600">Current images:</span>#}
-{#                    </div>#}
-{#                </div>#}
+            {% if images|length %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="text-gray-600">Current images:</span>
+                    </div>
+                </div>
 
-{#                {% for image in images %}#}
-{#                    <div class="row mt-2">#}
-{#                        <div class="col-md-5">#}
-{#                            <img src="{{ asset('uploads/images/products/' ~ product.id ~ '/' ~ image.filenameMiddle) }}" alt="{{ image.filenameMiddle }}">#}
-{#                        </div>#}
-{#                        <div class="col-md-7">#}
-{#                            <a href="{{ path('admin_product_image_delete', {'id': image.id}) }}" class="btn btn-outline-info">#}
-{#                                DELETE#}
-{#                            </a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                {% endfor %}#}
+                {% for image in images %}
+                    <div class="row mt-2">
+                        <div class="col-md-5">
+                            <img src="{{ asset('uploads/images/products/' ~ product.id ~ '/' ~ image.filenameMiddle) }}" alt="{{ image.filenameMiddle }}">
+                        </div>
+                        <div class="col-md-7">
+                            <a href="{{ path('admin_product_image_delete', {'id': image.id}) }}" class="btn btn-outline-info">
+                                DELETE
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
 
-{#            {% endif %}#}
+            {% endif %}
 
             <div class="form-group row">
                 <div class="col-md-1"></div>
