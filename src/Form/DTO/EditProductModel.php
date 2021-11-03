@@ -35,7 +35,7 @@ class EditProductModel
     /**
      * @var string;
      */
-    public $descripion;
+    public $description;
 
     /**
      * @var bool;
@@ -59,7 +59,7 @@ class EditProductModel
         $model->title = $product->getTitle();
         $model->price = $product->getPrice();
         $model->quantity = $product->getQuantity();
-        $model->descripion = $product->getDescription();
+        $model->description = $product->getDescription();
         $model->isPublished = $product->getIsPublished();
         $model->isDeleted = $product->getIsDeleted();
 
