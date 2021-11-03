@@ -43,12 +43,18 @@ class ProductController extends AbstractController
         $form->handleRequest($request);
 
        if ($form->isSubmitted() && $form->isValid()) {
-           $product = $productFormHandler->processEditForm($product, $form);
+           $product = $productFormHandler->processEditForm($editProductModel, $form);
+
+           $this->addFlash('success', 'Your changes were saved!');
 
            return $this->redirectToRoute('admin_product_edit', ['id' => $product->getId()]);
        }
 
-       $images = $product->getProductImages()
+       if ($form->isSubmitted() && !$form->isValid()) {
+           $this->addFlash('warning', 'Something went wrong. Please check your form!');
+       }
+
+       $images = $product
            ? $product->getProductImages()->getValues()
            : [];
 
@@ -65,6 +71,8 @@ class ProductController extends AbstractController
     public function delete(Product $product, ProductManager $productManager): Response
     {
         $productManager->remove($product);
+
+        $this->addFlash('warning', 'This product has been successfully deleted!');
 
         return $this->redirectToRoute('admin_product_list');
 
