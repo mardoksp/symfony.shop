@@ -56,7 +56,7 @@ class UserController extends AbstractController
             $this->addFlash('warning', 'Something went wrong. Please check your form!');
         }
 
-        return $this->render('admin/category/edit.html.twig', [
+        return $this->render('admin/user/edit.html.twig', [
             'user' => $user,
             'form' => $form->createView()
         ]);
@@ -71,6 +71,6 @@ class UserController extends AbstractController
 
         $this->addFlash('warning', 'This category has been successfully deleted!');
 */
-        return $this->redirectToRoute('admin_category_list');
+        return $this->redirectToRoute('admin_order_list');
     }
 }

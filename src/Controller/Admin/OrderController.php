@@ -73,6 +73,6 @@ class OrderController extends AbstractController
 
         $this->addFlash('warning', 'This order has been successfully deleted!');
 
-        return $this->redirectToRoute('admin_category_list');
+        return $this->redirectToRoute('admin_order_list');
     }
 }
