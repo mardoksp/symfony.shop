@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\User;
 use App\Form\Admin\EditUserFormType;
+use App\Form\Handler\UserFormHandler;
 use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,6 +22,10 @@ class UserController extends AbstractController
      */
     public function list(UserRepository $userRepository): Response
     {
+        if (!$this->isGranted('ROLE_SUPER_ADMIN')) {
+            return $this->redirectToRoute('admin_dashboard_show');
+        }
+
         $users = $userRepository->findBy(['isDeleted' => false], ['id' => 'DESC']);
 
         return $this->render('admin/user/list.html.twig', [
@@ -32,8 +37,11 @@ class UserController extends AbstractController
      * @Route("/edit/{id}", name="edit")
      * @Route("/add", name="add")
      */
-    public function edit(Request $request, User $user = null): Response
+    public function edit(Request $request, UserFormHandler $userFormHandler, User $user = null): Response
     {
+        if (!$this->isGranted('ROLE_SUPER_ADMIN')) {
+            return $this->redirectToRoute('admin_dashboard_show');
+        }
 
         if (!$user) {
             $user = new User();
@@ -43,12 +51,11 @@ class UserController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            dd($user);
-            /*
-            $category = $categoryFormHandler->processEditForm($editCategoryModel);
+
+            $user = $userFormHandler->processEditForm($form);
 
             $this->addFlash('success', 'Your changes were saved!');
-*/
+
             return $this->redirectToRoute('admin_user_edit', ['id' => $user->getId()]);
         }
 
